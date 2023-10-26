@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+section {
+  height: 700px;
+}
+
+body {
+  height: 100vh;
+  color: white !important;
+
+}
+
+.main {
+  height: 100vh;
+  background: linear-gradient(0deg, rgb(0, 0, 0, .2), rgb(0, 0, 0, .8)), url("https://images4.alphacoders.com/132/1328545.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blockquote {
+  color: black;
+  display: none;
+  background-color: aqua;
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.blockquote::after {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: -23px;
+  border-top: 25px solid transparent;
+  border-right: 35px solid aqua;
+  border-left: none;
+  border-bottom: 25px solid transparent;
+  z-index: 3;
+}
+
+.blockquote-container {
+  height: 200px;
+}
